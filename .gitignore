@@ -1,0 +1,6 @@
+# quick-stack ignore file
+node_modules/
+.DS_Store
+.idea
+.tern-project
+.server.js

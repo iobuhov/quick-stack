@@ -1,0 +1,227 @@
+html, body {
+  background: #323232;
+  margin: 0;
+  font-family: courier;
+  height: 100%;
+}
+input {
+  padding: 0;
+  border:  0;
+}
+rect[class*="rect-set-"] {
+  display: none;
+}
+#sidebar {
+  width: 300px;
+  height: 100%;
+  background: #7f7f7f;
+  float: left;
+}
+#logo {
+  background: #3F83A6;
+  height: 100px;
+  position: relative;
+  border: .2em solid #fff;
+  box-sizing: border-box;
+}
+#logo span {
+  color: #FFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  font-family: sans-serif;
+}
+#vinyl-width-control {
+  position: relative;
+  height: 30px;
+  background: rgb(213, 236, 211);
+  color: #777;
+  border-top: 1px solid rgb(153, 153, 153);
+}
+#vinyl-width-control div {
+  display: table;
+  float: left;
+  height: inherit;
+  width: 30%;
+}
+#vinyl-width-control span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 12px;
+}
+#vinyl-width-control input {
+  color: #777;
+  text-align: center;
+  font-size: 20px;
+  height: inherit;
+  display: block;
+  float: right;
+  width: 70%;
+}
+#element-label {
+    height: 30px;
+    position: relative;
+    background: rgb(116, 149, 166);
+}
+#element-label span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16pt;
+}
+#vinyl-container {
+  float: left;
+  width: 604px;
+  height: 100%;
+  position: relative;
+}
+#vinyl-container .out {
+  overflow: hidden;
+  height: 96%;
+  width: 300;
+  display: block;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#vinyl-container .inn {
+    height: 99%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: -15px;
+    overflow-y: auto;
+}
+#vinyl-container .vinyl-background {
+  width: 300px;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  position: relative;
+  margin: auto;
+  height: 2000px;
+  background-color: black;
+  border-style: dashed;
+  border-width: 2px;
+  border-color: yellow;
+  /* box-sizing: border-box; */
+}
+#vinyl {
+  background: #525252;
+  height: 2000px;
+  display: block;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  /*border-color: #d8ae32;*/
+  /*border-width: 1px;*/
+  /*border-style: dashed;*/
+}
+#rsb {
+  float:right;
+  position: absolute;
+  left: 904px;
+  right: 0;
+  height: 100%;
+  background-color: #555555;
+}
+#rsb-set {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.element-row {
+    height: 30px;
+    border-style: solid;
+    border-color: #555;
+    border-width: 2px 0;
+}
+.element-row + .element-row {
+  border-width: 0 0 2px 0;
+}
+.element-row input[type="text"] {
+  pbtning: 0;
+  border: none;
+  font-size: 16pt;
+  float: left;
+  width: 35%;
+  height: inherit;
+  text-align: center;
+}
+.element-row input[type="text"]:last-child {
+    float: right;
+}
+.btn {
+    position: relative;
+    height: 30px;
+    background-color: rgb(152, 211, 147);
+    color: white;
+    font-size: 16pt;
+    border-style: solid;
+    border-width: 1px 0;
+    box-sizing: border-box;
+}
+.btn span {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.btn+.btn {
+    border-width: 0 0 1px;
+}
+.btn:hover {
+  background-color: #72BF6B;
+}
+.btn:active {
+  background-color: #4f7b48;
+}
+.outer-num {
+    height: inherit;
+    width: 20%;
+    position: relative;
+    float: left;
+    background-color: rgb(252, 175, 90);
+}
+.inner-num {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.delimiter {
+    position: relative;
+    float: left;
+    height: inherit;
+    width: 10%;
+    background-color: white;
+}
+.delimiter span {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    font-size: 20pt;
+    height: 12px;
+    line-height: 15px;
+}
