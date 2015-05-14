@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jasmine Spec Runner v2.3.4</title>
+  <link rel="shortcut icon" type="image/png" href="vendor/jasmine-2.3.4/jasmine_favicon.png">
+  <link rel="stylesheet" href="vendor/jasmine-2.3.4/jasmine.css">
+  <script type="text/javascript" src="vendor/require.js"></script>
+  <script type="text/javascript">
+    require.config({
+      baseUrl: 'test',
+      paths: {
+        jasmineSrc: '/vendor/jasmine-2.3.4/jasmine',
+        jasmineHtml: '/vendor/jasmine-2.3.4/jasmine-html',
+        jasmine: '/vendor/jasmine-2.3.4/boot'
+      },
+      shim: {
+        jasmineHtml: {
+          deps: ['jasmineSrc']
+        },
+        jasmine: {
+          deps: ['jasmineSrc', 'jasmineHtml']
+        }
+      }
+    });
+    require(['specs']);
+  </script>
+</head>
+<body></body>
+</html>

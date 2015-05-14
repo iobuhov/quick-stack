@@ -51,8 +51,7 @@ function init() {
     }
 
     function randomColor() {
-        var max = 0xffffff;
-        return '#' + (randomize(0, max)).toString(16);
+        return '#' + (randomize(0, 0xffffff)).toString(16);
     }
 
     function randomData() {
